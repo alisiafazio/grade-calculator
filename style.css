@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    font-family: "Chalkboard SE";
+    background-color: lightgray;
+    color: white;
+}
+h1 {
+    font-family: Chalkboard;
+    color: black;
+    text-align: center;
+}
+button {
+   font-size: large;
+   color: white;
+   background-color: slategray;
+   font-family: "Chalkboard SE";
+}
+table {
+    font-family:"Chalkboard SE";
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input{
+    background-color: transparent;
+    border: transparent;
+    font-family: Chalkboard;
+}
+
+section{
+    color: black;
+}
+
+#neededOnFinal{
+    color: black;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<br>
+<br>
+<h1>GRADE CALCULATOR</h1>
+<br>
+<table style="width:100%">
+    <tr>
+        <th></th>
+        <th>Grades</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <td>Homework</td>
+        <td><input value="70,80,90" id = "homework" size="25" ></td>
+        <td><input type="number" value="25" id = "homeworkWeight" size="25" ></td>
+    </tr>
+    <tr>
+        <td>Tests and Quizzes</td>
+        <td><input value="70,80,90" id = "tests/quizzes" size="25" ></td>
+        <td><input type="number" value="25" id = "testAndQuizWeight" size="25" ></td>
+
+    </tr>
+    <tr>
+        <td>Classwork</td>
+        <td><input value="70,80,90" id = "classwork" size="25" ></td>
+        <td><input type="number" value="35" id = "classworkWeight" size="25" ></td>
+
+    </tr>
+</table>
+<br>
+<section>
+    Your current grade is:
+    <div id="finalGrade"></div>
+</section>
+<br>
+<button id="calculateGrade" onclick="calculateCurrentGrade()">Calculate Current Grade</button>
+<br>
+<br>
+<br>
+
+<table style="width:100%">
+    <tr>
+        <th></th>
+        <th>Current Grade</th>
+        <th>Grade Wanted</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <td>Final</td>
+        <td><input type="number" value="80" id = "currentGrade" size="25" ></td>
+        <td><input type="number" value="90" id = "gradeWanted" size="25" ></td>
+        <td><input type="number" value="15" id = "finalWeight" size="25" ></td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+
+<button id="calculateGradeNeeded" onclick="calculateGradeNeeded()">Calculate Final Exam Grade Needed</button>
+<br>
+<br>
+<br>
+<div id="neededOnFinal"></div></section>
+</body>
+</html>
