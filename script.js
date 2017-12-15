@@ -16,7 +16,7 @@ function calculateCurrentGrade(){
     document.getElementById("finalGrade").innerHTML = finalGrade;
     return Math.round(finalGrade);
 }
-
+//
 function convertArrayStringToNumber(string){
     var array = string.split(",");
     for(var i = 0; i < array.length; i++) {
