@@ -12,7 +12,7 @@ function calculateCurrentGrade(){
     var finalHomework = (homeworkAverage * (homeworkWeight/100));
     var finalClasswork = (classworkAverage * (classworkWeight/100));
     var finalTestsAndQuizzes = (testsAndQuizzesAverage * (testsAndQuizzesWeight/100));
-    var finalGrade = ((finalHomework + finalClasswork + finalTestsAndQuizzes)/ (testsAndQuizzesWeight + classworkWeight + homeworkWeight)) *100;
+    var finalGrade = ((finalHomework + finalClasswork + finalTestsAndQuizzes)/ (testsAndQuizzesWeight + classworkWeight + homeworkWeight)) * 100;
     document.getElementById("finalGrade").innerHTML = finalGrade;
     return Math.round(finalGrade);
 }
@@ -42,7 +42,7 @@ function calculateGradeNeeded() {
     console.log(wantedGrade);
     var finalWeight = parseInt(document.getElementById("finalWeight").value);
     console.log(finalWeight);
-    var final = 100*(wantedGrade + finalWeight - currentGrade)/finalWeight;
+    var final = 100 * (wantedGrade + finalWeight - currentGrade) / finalWeight;
     console.log(final);
     document.getElementById("neededOnFinal").innerHTML = "You need a " + Math.round(final) + " on the final to get a " + wantedGrade + " in the class.";
 }
