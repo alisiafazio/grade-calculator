@@ -14,7 +14,7 @@ function calculateCurrentGrade(){
     var finalTestsAndQuizzes = (testsAndQuizzesAverage * (testsAndQuizzesWeight/100));
     var finalGrade = ((finalHomework + finalClasswork + finalTestsAndQuizzes)/ (testsAndQuizzesWeight + classworkWeight + homeworkWeight)) *100;
     document.getElementById("finalGrade").innerHTML = finalGrade;
-    return finalGrade;
+    return Math.round(finalGrade);
 }
 
 function convertArrayStringToNumber(string){
@@ -44,5 +44,6 @@ function calculateGradeNeeded() {
     console.log(finalWeight);
     var final = 100*(wantedGrade + finalWeight - currentGrade)/finalWeight;
     console.log(final);
-    document.getElementById("neededOnFinal").innerHTML = "You need a " + final + " on the final to get a " + wantedGrade + " in the class.";
+    document.getElementById("neededOnFinal").innerHTML = "You need a " + Math.round(final) + " on the final to get a " + wantedGrade + " in the class.";
 }
+
